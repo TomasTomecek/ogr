@@ -14,9 +14,6 @@ Source0:        https://files.pythonhosted.org/packages/source/o/%{pypi_name}/%{
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(setuptools)
-BuildRequires:  python3dist(setuptools-scm)
-BuildRequires:  python3dist(setuptools-scm-git-archive)
 
 %description
 One Git library to Rule!
