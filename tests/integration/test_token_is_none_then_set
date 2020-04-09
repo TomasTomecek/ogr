@@ -22,7 +22,7 @@ interactions:
       Connection:
       - Keep-Alive
       Date:
-      - Tue, 07 Apr 2020 08:59:41 GMT
+      - Wed, 08 Apr 2020 07:55:49 GMT
       Keep-Alive:
       - timeout=15, max=500
       Referrer-Policy:
@@ -40,7 +40,7 @@ interactions:
       X-Xss-Protection:
       - 1; mode=block
       apptime:
-      - D=67812
+      - D=112243
       content-length:
       - '174'
       content-type:
@@ -74,7 +74,7 @@ interactions:
       Connection:
       - Keep-Alive
       Date:
-      - Tue, 07 Apr 2020 08:59:43 GMT
+      - Wed, 08 Apr 2020 07:55:50 GMT
       Keep-Alive:
       - timeout=15, max=500
       Referrer-Policy:
@@ -92,7 +92,57 @@ interactions:
       X-Xss-Protection:
       - 1; mode=block
       apptime:
-      - D=139583
+      - D=137438
+      content-length:
+      - '28'
+      content-type:
+      - application/json
+      x-fedora-appserver:
+      - pkgs01.stg.phx2.fedoraproject.org
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://src.stg.fedoraproject.org/api/0/-/whoami
+  response:
+    body:
+      string: "{\n  \"username\": \"ttomecek\"\n}"
+    headers:
+      Connection:
+      - Keep-Alive
+      Date:
+      - Wed, 08 Apr 2020 07:55:50 GMT
+      Keep-Alive:
+      - timeout=15, max=499
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Fedora-ProxyServer:
+      - proxy01.stg.phx2.fedoraproject.org
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      apptime:
+      - D=139565
       content-length:
       - '28'
       content-type:

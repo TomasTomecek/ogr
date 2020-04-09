@@ -6,6 +6,7 @@ from github import GithubException, UnknownObjectException
 from requre import RequreTestCase
 from requre.storage import PersistentObjectStorage
 from requre.utils import StorageMode
+from vcr import use_cassette
 
 from ogr import GithubService
 from ogr.abstract import PRStatus, IssueStatus, CommitStatus
@@ -751,6 +752,7 @@ class Forks(GithubTests):
         assert "Not Found" in s
         assert "404" in s
 
+    @use_cassette()
     def test_get_fork(self):
         fork = self.ogr_project.get_fork()
         assert fork

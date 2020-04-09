@@ -502,3 +502,4 @@ def test_token_is_none_then_set():
 
     s2 = PagureService(token=token, instance_url=instance_url)
     assert s2.user.get_username()
+    assert s2.user.get_username()  # 2nd identical call
